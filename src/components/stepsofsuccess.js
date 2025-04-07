@@ -37,7 +37,7 @@ function stepsofsuccess() {
     <div className="w-full pb-[3rem]">
       <div className="[@media(min-width:1450px)]:!w-[1440px] [@media(min-width:1210px)]:w-[1200px] w-full mx-auto ">
         <div className="[@media(min-width:1200px)]:w-[17.7rem] sm:w-[15.3rem] w-[11.9rem] relative mx-auto flex justify-center items-center text-center">
-          <h1 className="text-[#000000] [@media(min-width:1200px)]:!text-[30px] sm:text-[26px] text-[20px] font-[800]">
+          <h1 className="text-[#000000] [@media(min-width:1200px)]:!text-[30px] sm:text-[26px] text-[20px] font-[800] uppercase">
             STEPS OF SUCCESS
           </h1>
           <div className="absolute [@media(min-width:1200px)]:left-[-25px] left-[-20px] top-0 h-full flex items-center">

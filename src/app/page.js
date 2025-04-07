@@ -2,6 +2,7 @@ import Image from "next/image";
 import Navbar from "../components/navbar";
 import Banner from "../components/banner";
 import Discover from "../components/discover";
+import AdvantagesOfThePlatform from "../components/advantagesOfThePlatform";
 import StepsOfSuccess from "../components/stepsofsuccess";
 import TopTalentsReadyToHelp from "../components/topTalentsReadyToHelp";
 import GetAnswers from "../components/getAnswers";
@@ -19,6 +20,7 @@ export default function Home() {
       <SuccessfulContracts /> */}
       <MatchSection />
       <StepsOfSuccess />
+      <AdvantagesOfThePlatform />
       <Jobwheeinaction />
       <TopTalentsReadyToHelp />
       <GetAnswers />

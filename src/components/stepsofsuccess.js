@@ -44,7 +44,7 @@ function stepsofsuccess() {
             <div className="[@media(min-width:460px)]:w-[14px] w-[10px] [@media(min-width:460px)]:h-[14px] h-[10px] bg-[#C0D724]"></div>
           </div>
           <div className="absolute right-0 bottom-0 h-full flex items-end">
-            <div className="[@media(min-width:460px)]:w-[124px] w-[92px] [@media(min-width:460px)]:h-[5px] h-[2px] rounded-[25px] bg-[#C0D724]"></div>
+            <div className="[@media(min-width:460px)]:w-[124px] w-[92px] [@media(min-width:460px)]:h-[4px] h-[2px] rounded-[25px] bg-[#C0D724]"></div>
           </div>
         </div>
         <div className="w-full [@media(min-width:1210px)]:pl-0 sm:pl-[2rem] pl-[1.2rem]">

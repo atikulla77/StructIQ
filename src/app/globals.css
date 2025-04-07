@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+html {
+  background-color: #f0f1f4;
+}
+
+.PoppinsFont {
+  font-family: var(--font-poppins);
+}
+
+.bottomScrollbar::-webkit-scrollbar {
+  display: none;
+  scrollbar-width: none;
+}

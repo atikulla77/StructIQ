@@ -111,7 +111,7 @@ function stepsofsuccess() {
                     {key.description}
                   </p>
                 </div>
-                <div className="absolute left-0 bottom-[-10px] w-full flex justify-center">
+                <div className="absolute left-0 [@media(min-width:1440px)]:bottom-[-18px] bottom-[-10px] w-full flex justify-center">
                   <div className="[@media(min-width:1440px)]:w-[161px] w-[134px] [@media(min-width:1440px)]:h-[25px] h-[16px] bg-[#CBEC5E] rounded-t-[15px]"></div>
                 </div>
               </div>

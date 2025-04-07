@@ -6,15 +6,15 @@ function jobwheeinaction() {
   return (
     <div className="w-full mt-[4rem] mb-[4rem]">
       <div className="[@media(min-width:1450px)]:!w-[1440px] [@media(min-width:1210px)]:w-[1200px] w-full mx-auto ">
-        <div className="[@media(min-width:770px)]:!w-[23.1rem] w-[15.4rem] relative mx-auto flex justify-center items-center text-center">
-          <h1 className="text-[#000000] [@media(min-width:770px)]:!text-[30px] text-[20px] font-[800] uppercase">
+        <div className="[@media(min-width:1200px)]:!w-[23.1rem] sm:w-[20rem] w-[15.4rem] relative mx-auto flex justify-center items-center text-center">
+          <h1 className="text-[#000000] [@media(min-width:1200px)]:!text-[30px] sm:text-[26px] text-[20px] font-[800] uppercase">
             SEE Jobwhee IN ACTION
           </h1>
-          <div className="absolute [@media(min-width:770px)]:left-[-25px] left-[-20px] top-0 h-full flex items-center">
-            <div className="[@media(min-width:770px)]:w-[14px] w-[10px] [@media(min-width:770px)]:h-[14px] h-[10px] bg-[#C0D724]"></div>
+          <div className="absolute [@media(min-width:1200px)]:left-[-25px] left-[-20px] top-0 h-full flex items-center">
+            <div className="[@media(min-width:1200px)]:w-[14px] w-[10px] [@media(min-width:1200px)]:h-[14px] h-[10px] bg-[#C0D724]"></div>
           </div>
           <div className="absolute right-0 bottom-0 h-full flex items-end">
-            <div className="[@media(min-width:770px)]:w-[105px] w-[92px] [@media(min-width:770px)]:h-[4px] h-[2px] rounded-[25px] bg-[#C0D724]"></div>
+            <div className="[@media(min-width:1200px)]:w-[105px] w-[92px] [@media(min-width:1200px)]:h-[4px] h-[2px] rounded-[25px] bg-[#C0D724]"></div>
           </div>
         </div>
         <div className="w-full flex gap-[15px] justify-center items-center [@media(min-width:770px)]:mt-[2.5rem] mt-[1.5rem] [@media(min-width:770px)]:mb-[1.5rem] mb-[1rem]">

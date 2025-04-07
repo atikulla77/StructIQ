@@ -36,15 +36,15 @@ function stepsofsuccess() {
   return (
     <div className="w-full pb-[3rem]">
       <div className="[@media(min-width:1450px)]:!w-[1440px] [@media(min-width:1210px)]:w-[1200px] w-full mx-auto ">
-        <div className="[@media(min-width:460px)]:w-[17.7rem] w-[11.9rem] relative mx-auto flex justify-center items-center text-center">
-          <h1 className="text-[#000000] [@media(min-width:460px)]:text-[30px] text-[20px] font-[800]">
+        <div className="[@media(min-width:1200px)]:w-[17.7rem] sm:w-[15.3rem] w-[11.9rem] relative mx-auto flex justify-center items-center text-center">
+          <h1 className="text-[#000000] [@media(min-width:1200px)]:!text-[30px] sm:text-[26px] text-[20px] font-[800]">
             STEPS OF SUCCESS
           </h1>
-          <div className="absolute [@media(min-width:460px)]:left-[-25px] left-[-20px] top-0 h-full flex items-center">
-            <div className="[@media(min-width:460px)]:w-[14px] w-[10px] [@media(min-width:460px)]:h-[14px] h-[10px] bg-[#C0D724]"></div>
+          <div className="absolute [@media(min-width:1200px)]:left-[-25px] left-[-20px] top-0 h-full flex items-center">
+            <div className="[@media(min-width:1200px)]:w-[14px] w-[10px] [@media(min-width:1200px)]:h-[14px] h-[10px] bg-[#C0D724]"></div>
           </div>
           <div className="absolute right-0 bottom-0 h-full flex items-end">
-            <div className="[@media(min-width:460px)]:w-[124px] w-[92px] [@media(min-width:460px)]:h-[4px] h-[2px] rounded-[25px] bg-[#C0D724]"></div>
+            <div className="[@media(min-width:1200px)]:w-[124px] w-[92px] [@media(min-width:1200px)]:h-[4px] h-[2px] rounded-[25px] bg-[#C0D724]"></div>
           </div>
         </div>
         <div className="w-full [@media(min-width:1210px)]:pl-0 sm:pl-[2rem] pl-[1.2rem]">

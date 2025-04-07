@@ -59,7 +59,7 @@ function topTalentsReadyToHelp() {
     },
   ];
   return (
-    <div className="w-full pt-[8rem] [@media(min-width:1450px)]:!pb-[5rem] [@media(min-width:1210px)]:pb-[2rem] pb-[3rem]">
+    <div className="w-full [@media(min-width:1210px)]:!pt-[8rem]  [@media(min-width:770px)]:pt-[6rem] pt-[3rem] ">
       <div className="[@media(min-width:1450px)]:!w-[1440px] [@media(min-width:1210px)]:w-[1200px] w-full [@media(min-width:1450px)]:!px-0 sm:px-[2rem] px-0 mx-auto ">
         {/* Tittle */}
         <div className="[@media(min-width:1200px)]:!w-[27rem] sm:w-[23.4rem] w-[18rem] relative mx-auto flex justify-center items-center text-center [@media(min-width:1200px)]:!mb-[5rem] sm:mb-[3rem] mb-[2rem]">

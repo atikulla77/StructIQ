@@ -4,6 +4,7 @@ import Banner from "../components/banner";
 import Discover from "../components/discover";
 import StepsOfSuccess from "../components/stepsofsuccess";
 import TopTalentsReadyToHelp from "../components/topTalentsReadyToHelp";
+import GetAnswers from "../components/getAnswers";
 import Footer from "../components/footer";
 import Jobwheeinaction from "../components/jobwheeinaction";
 import SuccessfulContracts from "@/components/SuccessfulContracts";
@@ -20,6 +21,7 @@ export default function Home() {
       <StepsOfSuccess />
       <Jobwheeinaction />
       <TopTalentsReadyToHelp />
+      <GetAnswers />
       <Footer />
     </div>
   );

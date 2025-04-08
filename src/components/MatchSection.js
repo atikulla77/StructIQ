@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
-import { FaSearch, FaUser, FaBriefcase } from "react-icons/fa";
+import { FaUser, FaBriefcase } from "react-icons/fa";
 import { MdKeyboardArrowDown, MdVerifiedUser } from "react-icons/md";
 import { IoIosSearch } from "react-icons/io";
 
@@ -73,7 +73,7 @@ const MatchSection = () => {
             <div className="relative [@media(min-width:450px)]:flex hidden items-center bg-white rounded-full shadow-lg max-w-lg">
               <div className="flex items-center pl-2">
                 <div className="bg-black border-2 border-[#CBEC5E] p-2 rounded-full">
-                  <FaSearch className="w-5 h-5 text-white" />
+                  <IoIosSearch className="w-5 h-5 text-white" />
                 </div>
               </div>
               <input

@@ -112,7 +112,7 @@ export default function Banner() {
               />
 
               <div className="relative mr-[5px]">
-                <div className="absolute left-0 top-0 h-full py-[13px]">
+                <div className="absolute left-0 top-0 h-full py-[13px] [@media(min-width:1210px)]:hidden flex">
                   <div className="w-[1px] h-full bg-[#737373]"></div>
                 </div>
                 <button

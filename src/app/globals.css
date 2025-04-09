@@ -14,7 +14,7 @@ html {
 }
 
 /* Banner Background Image */
-#bannerBackgroundClipPath {
+/* #bannerBackgroundClipPath {
   clip-path: polygon(
     0 0,
     100% 0,
@@ -31,7 +31,7 @@ html {
   #bannerBackgroundClipPath {
     clip-path: none;
   }
-}
+} */
 .clip-path-footer {
   clip-path: polygon(
     50% 6%,

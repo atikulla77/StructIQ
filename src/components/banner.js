@@ -56,17 +56,35 @@ export default function Banner() {
           layout="fill"
           objectFit="cover"
           className="z-0 rounded-[40px]"
-          id="bannerBackgroundClipPath"
         />
-
-        <div className="[@media(min-width:760px)]:flex hidden justify-between w-full">
-          <div
-            className="[@media(min-width:1450px)]:!w-[567px] [@media(min-width:1210px)]:w-[473px] w-[299px] [@media(min-width:1450px)]:!h-[191px] [@media(min-width:1210px)]:h-[159px] h-[107px] flex items-center bg-[#86868626] backdrop-blur-[34px] [@media(min-width:1210px)]:pl-[30px] pl-[20px] py-6 [@media(min-width:1450px)]:!rounded-[28px] rounded-[20px]  text-white"
-            style={{
-              clipPath: "polygon(0 0, 100% 0, 100% 50%, 85% 100%, 0 100%)",
-            }}
+        <div className="absolute left-0 bottom-[-2px] w-full [@media(min-width:450px)]:flex hidden justify-center">
+          <svg
+            version="1.0"
+            xmlns="http://www.w3.org/2000/svg"
+            className="[@media(min-width:1450px)]:!w-[640pt] [@media(min-width:1210px)]:!w-[550pt] [@media(min-width:755px)]:w-[445pt] [@media(min-width:575px)]:w-[350pt] w-[290pt]"
+            viewBox="0 0 1500.000000 131.000000"
+            preserveAspectRatio="xMidYMid meet"
           >
-            <h2 className="[@media(min-width:1450px)]:!text-[40px] [@media(min-width:1210px)]:text-[30px] text-[20px] font-[800] mb-2 uppercase [@media(min-width:1450px)]:!leading-[61px] [@media(min-width:1210px)]:leading-[50px] leading-[40px]">
+            <g
+              transform="translate(0.000000,131.000000) scale(0.100000,-0.100000)"
+              fill="#f0f1f4"
+              stroke="none"
+            >
+              <path
+                d="M7345 1194 c-16 -2 -73 -9 -125 -15 -285 -33 -734 -118 -1935 -370
+-1285 -270 -1871 -384 -2550 -499 -944 -159 -1754 -256 -2430 -289 -88 -4
+3156 -8 7210 -8 4054 0 7296 4 7205 8 -637 31 -1422 122 -2315 270 -687 114
+-1420 256 -2735 533 -1171 246 -1578 323 -1910 361 -121 13 -334 18 -415 9z"
+              />
+            </g>
+          </svg>
+        </div>
+        <div className="[@media(min-width:760px)]:flex hidden justify-between w-full">
+          <div className="[@media(min-width:1450px)]:!w-[567px] [@media(min-width:1210px)]:w-[473px] w-[299px] [@media(min-width:1450px)]:!h-[191px] [@media(min-width:1210px)]:h-[159px] h-[107px] flex items-center [@media(min-width:1210px)]:pl-[30px] pl-[20px] py-6 [@media(min-width:1450px)]:!rounded-[28px] rounded-[20px]  text-white relative bg-[#86868626] backdrop-blur-[34px]"            style={{
+              clipPath: "polygon(0 0, 100% 0, 100% 50%, 85% 100%, 0 100%)",
+            }}>
+
+            <h2 className="relative z-[1] [@media(min-width:1450px)]:!text-[40px] [@media(min-width:1210px)]:text-[30px] text-[20px] font-[800] mb-2 uppercase [@media(min-width:1450px)]:!leading-[61px] [@media(min-width:1210px)]:leading-[50px] leading-[40px]">
               Find the <span className="text-[#CBEC5E]">Talent</span>, Sign Up{" "}
               <br /> & Get The <span className="text-[#CBEC5E]">Job</span> Done
             </h2>
@@ -98,7 +116,7 @@ export default function Banner() {
             </div>
           </div>
         </div>
-        <div className="absolute [@media(min-width:1210px)]:!bottom-[1.5rem] [@media(min-width:450px)]:bottom-[0.5rem] bottom-[-17px] left-0 w-full flex justify-center">
+        <div className="absolute [@media(min-width:1210px)]:!bottom-[0.7rem] [@media(min-width:450px)]:bottom-[0px] bottom-[-12px] left-0 w-full flex justify-center">
           <div className="flex flex-col items-center">
             <div className="[@media(min-width:1450px)]:!w-[555px] w-[450px] [@media(min-width:1450px)]:!h-[60px] h-[50px] relative [@media(min-width:760px)]:flex hidden items-center bg-white rounded-full shadow-lg mt-12">
               <div className="[@media(min-width:1450px)]:!w-[50px] w-[42px] [@media(min-width:1450px)]:!h-[50px] h-[42px] bg-black border-2 border-[#CBEC5E] flex justify-center items-center rounded-[50%] ml-[5px]">
@@ -169,7 +187,7 @@ export default function Banner() {
             </div>
             {/* Education and Tutoring */}
             <div className="[@media(min-width:1450px)]:!pt-5 [@media(min-width:1210px)]:pt-[15px] pt-[13px] z-40">
-              <h1 className="bg-white [@media(min-width:1450px)]:!w-[355px] [@media(min-width:1210px)]:!w-[338px] [@media(min-width:450px)]:w-[241px] w-[207px] [@media(min-width:1450px)]:!h-[62px] [@media(min-width:1210px)]:!h-[52px] [@media(min-width:450px)]:h-[46px] h-[40px] [@media(min-width:1450px)]:!text-[20px] [@media(min-width:1210px)]:text-[18px] [@media(min-width:450px)]:text-[14px] text-[12px] font-[800] uppercase rounded-[61px] flex justify-center items-center text-center shadow-[0_15px_30px_0px_#73737326]">
+              <h1 className="bg-white [@media(min-width:1450px)]:!w-[355px] [@media(min-width:1210px)]:!w-[338px] [@media(min-width:450px)]:w-[241px] w-[207px] [@media(min-width:1450px)]:!h-[62px] [@media(min-width:1210px)]:!h-[52px] [@media(min-width:450px)]:h-[46px] h-[40px] [@media(min-width:1450px)]:!text-[20px] [@media(min-width:1210px)]:!text-[18px] [@media(min-width:450px)]:text-[14px] text-[12px] font-[800] uppercase rounded-[61px] flex justify-center items-center text-center shadow-[0_15px_30px_0px_#73737326]">
                 Education and Tutoring
               </h1>
             </div>

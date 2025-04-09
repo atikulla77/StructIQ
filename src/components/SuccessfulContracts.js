@@ -24,7 +24,7 @@ const SuccessfulContracts = () => {
         bio: "Math Teacher",
       },
       title: "Looking for Math Teacher",
-      paymentType: "fixed price",
+      paymentType: "Fixed Price",
       description:
         "We are looking for a teacher to provide one-on-one algebra and geometry tutoring, 60-minute sessions, twice weekly.",
       jobDetail: {
@@ -33,7 +33,7 @@ const SuccessfulContracts = () => {
         status: "Ongoing",
         budget: "2000",
       },
-      uniceClass: ""
+      uniceClass: "",
     },
     {
       id: 2,
@@ -50,7 +50,7 @@ const SuccessfulContracts = () => {
         bio: "Math Teacher",
       },
       title: "Looking for Math Teacher",
-      paymentType: "fixed price",
+      paymentType: "Fixed Price",
       description:
         "We are looking for a teacher to provide one-on-one algebra and geometry tutoring, 60-minute sessions, twice weekly.",
       jobDetail: {
@@ -59,7 +59,7 @@ const SuccessfulContracts = () => {
         status: "Ongoing",
         budget: "2000",
       },
-      uniceClass: "[@media(min-width:800px)]:block hidden"
+      uniceClass: "[@media(min-width:800px)]:block hidden",
     },
     {
       id: 3,
@@ -76,7 +76,7 @@ const SuccessfulContracts = () => {
         bio: "Math Teacher",
       },
       title: "Looking for Math Teacher",
-      paymentType: "fixed price",
+      paymentType: "Fixed Price",
       description:
         "We are looking for a teacher to provide one-on-one algebra and geometry tutoring, 60-minute sessions, twice weekly.",
       jobDetail: {
@@ -85,10 +85,9 @@ const SuccessfulContracts = () => {
         status: "Ongoing",
         budget: "2000",
       },
-      uniceClass: "[@media(min-width:1210px)]:!block hidden"
+      uniceClass: "[@media(min-width:1210px)]:!block hidden",
     },
   ];
-
 
   return (
     <div className="pb-12 sm:pt-12 pt-[1rem]">
@@ -96,7 +95,7 @@ const SuccessfulContracts = () => {
         {/* tittle */}
         <div className="[@media(min-width:1200px)]:!w-[24.5rem] sm:w-[21.1em] w-[16.2rem] relative mx-auto flex justify-center items-center text-center [@media(min-width:1450px)]:!mt-[2rem] [@media(min-width:1200px)]:mt-[1rem] mt-0 [@media(min-width:1450px)]:!mb-[5rem] [@media(min-width:1200px)]:!mb-[4rem] [@media(min-width:450px)]:mb-[3rem] mb-[2rem]">
           <h1 className="text-[#000000] [@media(min-width:1200px)]:!text-[30px] sm:text-[26px] text-[20px] font-[800] uppercase">
-          SUCCESSFUL CONTRACTS
+            SUCCESSFUL CONTRACTS
           </h1>
           <div className="absolute [@media(min-width:1200px)]:left-[-25px] left-[-20px] top-0 h-full flex items-center">
             <div className="[@media(min-width:1200px)]:w-[14px] w-[10px] [@media(min-width:1200px)]:h-[14px] h-[10px] bg-[#C0D724]"></div>
@@ -111,17 +110,39 @@ const SuccessfulContracts = () => {
           {contracts.map((contract) => (
             <div
               key={contract.id}
-              className={`${contract.uniceClass} relative [@media(min-width:1450px)]:!w-[467px] [@media(min-width:450px)]:w-[387px] w-[335px] [@media(min-width:1450px)]:!h-[486px] [@media(min-width:450px)]:h-[438px] h-[415px]`}
+              className={`${contract.uniceClass} relative [@media(min-width:1450px)]:!w-[467px] [@media(min-width:450px)]:w-[387px] w-[335px] [@media(min-width:1450px)]:!h-[486px] [@media(min-width:450px)]:h-[438px] h-[430px]`}
             >
               {/* Background Layer with ClipPath */}
-              <div
-                className="absolute inset-0 [@media(min-width:1450px)]:!rounded-4xl rounded-[20px] bg-white SuccessFullContractsCardsClipPath"
-              ></div>
+              <div className="absolute inset-0 [@media(min-width:1450px)]:!rounded-4xl rounded-[20px] bg-white">
+                <svg
+                  className="[@media(min-width:1450px)]:!w-[235px]  [@media(min-width:450px)]:w-[200px] w-[180px]"
+                  version="1.0"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 1303.000000 470.000000"
+                  preserveAspectRatio="xMidYMid meet"
+                >
+                  <g
+                    transform="translate(0.000000,470.000000) scale(0.100000,-0.100000)"
+                    fill="#f0f1f4"
+                    stroke="none"
+                  >
+                    <path
+                      d="M11 2394 c1 -1264 3 -2288 5 -2274 2 14 9 65 15 115 24 191 96 428
+181 600 233 467 624 743 1173 830 198 31 744 37 4290 44 l3520 7 94 22 c110
+26 261 95 333 152 56 44 183 182 458 495 102 116 196 224 211 240 37 41 381
+437 492 565 79 91 144 163 329 365 20 22 45 49 55 61 10 12 61 68 113 125 52
+57 122 133 155 168 202 220 304 311 483 429 51 34 95 62 97 62 2 0 34 17 72
+39 176 100 444 191 668 226 65 10 -942 13 -5440 14 -3036 0 -5922 4 -6412 8
+l-893 6 1 -2299z"
+                    />
+                  </g>
+                </svg>
+              </div>
 
               {/* Content Layer */}
-              <div className="relative z-10 [@media(min-width:1450px)]:!p-6 p-[10px] flex flex-col [@media(min-width:1450px)]:!space-y-4 space-y-0">
+              <div className="relative z-10 [@media(min-width:1450px)]:!px-[25px] px-[15px] [@media(min-width:1450px)]:!py-[15px] py-[10px] flex flex-col [@media(min-width:1450px)]:!space-y-4 space-y-0">
                 <div className="flex justify-end gap-5 relative">
-                  <h1 className="font-[900] [@media(min-width:1450px)]:!text-[20px] [@media(min-width:450px)]:text-[18px] text-[15px] pl-[1.5rem] absolute left-0 [@media(min-width:1450px)]:top-[-4px] tracking-[0.3px]">
+                  <h1 className="mt-[-5px] font-[900] [@media(min-width:1450px)]:!text-[20px] [@media(min-width:450px)]:text-[18px] text-[15px] pl-[1.5rem] absolute left-0 [@media(min-width:1450px)]:top-[-4px] tracking-[0.3px]">
                     CONTRACT
                   </h1>
                   <div className="text-right">
@@ -129,12 +150,12 @@ const SuccessfulContracts = () => {
                       {contract.title}
                     </h1>
                     <p className="w-full [@media(min-width:1450px)]:!text-[13px] [@media(min-width:450px)]:text-[12px] text-[11px] font-[400] pt-[5px]">
-                      <span className="font-[500]">Payment Type:</span>{" "}
+                      <span className="font-[600] pr-[3px]">Payment Type:</span>{" "}
                       {contract.paymentType}
                     </p>
                   </div>
                 </div>
-                <div className="flex gap-3 justify-between [@media(min-width:1450px)]:!pt-0 [@media(min-width:450px)]:pt-[12px] pt-[9px] [@media(min-width:1450px)]:!pb-0 pb-[10px]">
+                <div className="flex gap-3 justify-between [@media(min-width:1450px)]:!pt-0 [@media(min-width:450px)]:pt-[5px] pt-[9px] [@media(min-width:1450px)]:!pb-0 pb-[10px]">
                   {/* Client Section */}
                   <div className="[@media(min-width:1450px)]:!w-[203px] [@media(min-width:450px)]:w-[170px] w-[152px] [@media(min-width:1450px)]:!h-[124px] h-[107px] relative bg-gray-100 [@media(min-width:1450px)]:!p-3 p-[7px] rounded-[18px]">
                     <div className="flex gap-4 justify-between">
@@ -209,7 +230,7 @@ const SuccessfulContracts = () => {
                     {contract.description}
                   </p>
 
-                  <div className="[@media(min-width:1450px)]:!pb-0 pb-[13px]">
+                  <div className="[@media(min-width:1450px)]:!pb-0 pb-[13px] pt-[8px]">
                     <div className="w-full flex items-center pb-[8px]">
                       <div className="[@media(min-width:1450px)]:!w-[26px] w-[19px] [@media(min-width:1450px)]:!h-[26px] h-[19px] flex items-center justify-center rounded-[50%] bg-black">
                         <MdEmail className="text-white [@media(min-width:1450px)]:!text-[14px] text-[12px]" />
@@ -219,7 +240,7 @@ const SuccessfulContracts = () => {
                       </h1>
                     </div>
                     <div className="flex justify-between items-center">
-                      <div className="[@media(min-width:450px)]:w-[165px] w-[155px] flex flex-wrap gap-[5px]">
+                      <div className="[@media(min-width:1450px)]:!w-[210px] [@media(min-width:450px)]:w-[165px] w-[155px] flex flex-wrap gap-[7px]">
                         <p className="[@media(min-width:450px)]:text-[13px] text-[12px] font-[400] w-[100%] flex justify-between items-center">
                           <span className="font-semibold">Start Date:</span>{" "}
                           <span>{contract.jobDetail.startDate}</span>
@@ -230,7 +251,7 @@ const SuccessfulContracts = () => {
                         </p>
                       </div>
 
-                      <div className="[@media(min-width:450px)]:w-[130px] w-[125px] flex flex-wrap gap-[5px]">
+                      <div className="[@media(min-width:1450px)]:!w-[150px] [@media(min-width:450px)]:w-[130px] w-[125px] flex flex-wrap gap-[7px]">
                         <p className="[@media(min-width:450px)]:text-[13px] text-[12px] font-[400] w-[100%] flex items-center justify-between">
                           <span className="font-semibold">Status:</span>{" "}
                           <span className={`text-[black] font-[500]`}>

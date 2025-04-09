@@ -3,241 +3,273 @@
 import Image from "next/image";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
 import { FaStar } from "react-icons/fa";
-import { MdOutlineDescription } from "react-icons/md";
-import { RiShoppingBag4Fill } from "react-icons/ri";
+import { MdDescription } from "react-icons/md";
+import { MdEmail } from "react-icons/md";
 import { useState, useEffect } from "react";
 
-const SuccessfulContracts = () =>
-{
-    const contracts = [
-        {
-            client: {
-                name: "John Doe",
-                picture: "/images/d-1.png",
-                review: "4.4",
-                bio: "Founder of MathTech",
-            },
-            talent: {
-                name: "Sarah Smith",
-                picture: "/images/d-2.png",
-                review: "4.00",
-                bio: "Math Teacher",
-            },
-            title: "Looking for Math Teacher",
-            paymentType: "fixed price",
-            description: "We are looking for a teacher to provide one-on-one algebra and geometry tutoring, 60-minute sessions, twice weekly.",
-            jobDetail: {
-                startDate: "2025-03-01",
-                endDate: "2025-04-20",
-                status: "Completed",
-                budget: "800",
-            },
-        },
-        {
-            client: {
-                name: "Emily Johnson",
-                picture: "/images/d-3.png",
-                review: "4.4",
-                bio: "Founder of MathTech",
-            },
-            talent: {
-                name: "Mike Brown",
-                picture: "/images/d-2.png",
-                review: "4.9",
-                bio: "Math Teacher",
-            },
-            title: "Looking for Math Teacher",
-            paymentType: "fixed price",
-            description: "We are looking for a teacher to provide one-on-one algebra and geometry tutoring, 60-minute sessions, twice weekly.",
-            jobDetail: {
-                startDate: "2025-03-01",
-                endDate: "2025-04-20",
-                status: "Completed",
-                budget: "800",
-            },
-        },
-        {
-            client: {
-                name: "Alex Carter",
-                picture: "/images/d-2.png",
-                review: "5",
-                bio: "Founder of MathTech",
-            },
-            talent: {
-                name: "Lisa White",
-                picture: "/images/d-3.png",
-                review: "4.5",
-                bio: "Math Teacher",
-            },
-            title: "Looking for Math Teacher",
-            paymentType: "fixed price",
-            description: "We are looking for a teacher to provide one-on-one algebra and geometry tutoring, 60-minute sessions, twice weekly.",
-            jobDetail: {
-                startDate: "2025-03-01",
-                endDate: "2025-04-20",
-                status: "Completed",
-                budget: "800",
-            },
-        },
-    ];
-
-    const [ visibleContracts, setVisibleContracts ] = useState([]);
-
-    useEffect(() =>
+const SuccessfulContracts = () => {
+  const contracts = [
     {
-        const updateVisibleContracts = () =>
-        {
-            if (window.innerWidth < 640)
-            {
-                // Mobile: Show 1 card
-                setVisibleContracts(contracts.slice(0, 1));
-            } else if (window.innerWidth >= 640 && window.innerWidth < 1024)
-            {
-                // Small devices: Show 2 cards
-                setVisibleContracts(contracts.slice(0, 2));
-            } else
-            {
-                // Large devices: Show all 3 cards
-                setVisibleContracts(contracts);
-            }
-        };
+      id: 1,
+      client: {
+        name: "John Doe",
+        picture: "/SuccessfullContract/1.png",
+        review: "4.4",
+        bio: "Founder of MathTech",
+      },
+      talent: {
+        name: "Sarah Smith",
+        picture: "/SuccessfullContract/2.png",
+        review: "4.0",
+        bio: "Math Teacher",
+      },
+      title: "Looking for Math Teacher",
+      paymentType: "fixed price",
+      description:
+        "We are looking for a teacher to provide one-on-one algebra and geometry tutoring, 60-minute sessions, twice weekly.",
+      jobDetail: {
+        startDate: "2025-03-01",
+        endDate: "Not Estimated",
+        status: "Ongoing",
+        budget: "2000",
+      },
+      uniceClass: ""
+    },
+    {
+      id: 2,
+      client: {
+        name: "Emily Johnson",
+        picture: "/SuccessfullContract/1.png",
+        review: "4.4",
+        bio: "Founder of MathTech",
+      },
+      talent: {
+        name: "Mike Brown",
+        picture: "/images/d-2.png",
+        review: "4.9",
+        bio: "Math Teacher",
+      },
+      title: "Looking for Math Teacher",
+      paymentType: "fixed price",
+      description:
+        "We are looking for a teacher to provide one-on-one algebra and geometry tutoring, 60-minute sessions, twice weekly.",
+      jobDetail: {
+        startDate: "2025-03-01",
+        endDate: "2025-04-20",
+        status: "Ongoing",
+        budget: "2000",
+      },
+      uniceClass: "[@media(min-width:800px)]:block hidden"
+    },
+    {
+      id: 3,
+      client: {
+        name: "Alex Carter",
+        picture: "/SuccessfullContract/1.png",
+        review: "5",
+        bio: "Founder of MathTech",
+      },
+      talent: {
+        name: "Lisa White",
+        picture: "/SuccessfullContract/2.png",
+        review: "4.5",
+        bio: "Math Teacher",
+      },
+      title: "Looking for Math Teacher",
+      paymentType: "fixed price",
+      description:
+        "We are looking for a teacher to provide one-on-one algebra and geometry tutoring, 60-minute sessions, twice weekly.",
+      jobDetail: {
+        startDate: "2025-03-01",
+        endDate: "2025-04-20",
+        status: "Ongoing",
+        budget: "2000",
+      },
+      uniceClass: "[@media(min-width:1210px)]:!block hidden"
+    },
+  ];
 
-        // Run on mount
-        updateVisibleContracts();
 
-        // Add resize listener
-        window.addEventListener("resize", updateVisibleContracts);
-
-        // Cleanup listener on unmount
-        return () => window.removeEventListener("resize", updateVisibleContracts);
-    }, []);
-
-    return (
-        <div className="py-12 px-4">
-            <div>
-                <div className="mb-10 flex justify-center gap-2">
-                    <div className="w-3 h-3 mt-4 bg-[#CBEC5E]"></div>
-                    <h2 className="text-2xl sm:text-3xl uppercase font-bold md:text-4xl">
-                        SUCCESSFUL <span className="relative">CONTRACTS <span className="absolute left-0 bottom-[-3px] w-full h-1 bg-[#CBEC5E] rounded-full"></span></span>
-                    </h2>
-                </div>
-
-                {/* Cards */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {visibleContracts.map((contract, index) => (
-                        <div key={index} className="relative">
-                            {/* Background Layer with ClipPath */}
-                            <div
-                                className="absolute inset-0 rounded-4xl bg-white"
-                                style={{
-                                    clipPath: "polygon(0% 100%, 100% 100%, 100% 0%, 54% 0, 49% 1%, 38% 14%, 3% 14%, 0 18%)",
-                                }}
-                            ></div>
-
-                            {/* Content Layer */}
-                            <div className="relative z-10 p-6 flex flex-col space-y-4">
-                                <div className="flex justify-between gap-5">
-                                    <h1 className="font-bold text-2xl">CONTRACT</h1>
-                                    <div>
-                                        <h1 className="font-bold text-[16px]">{contract.title}</h1>
-                                        <p><span className="font-bold">Payment Type:</span> {contract.paymentType}</p>
-                                    </div>
-                                </div>
-                                <div className="flex gap-3 justify-between">
-                                    {/* Client Section */}
-                                    <div className="w-full bg-gray-100 p-3 rounded-3xl">
-                                        <div className="flex gap-4 justify-between">
-                                            <Image
-                                                src={contract.client.picture}
-                                                alt={contract.client.name}
-                                                width={40}
-                                                height={40}
-                                                className="rounded-full w-[47px] h-[47px] object-cover"
-                                            />
-                                            <div>
-                                                <p className="bg-gray-300 px-4 py-1 rounded-full">Client</p>
-                                                <p className="flex gap-1"><FaStar className="mt-1 text-amber-300" /> {contract.client.review}</p>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <h3 className="text-lg font-semibold">{contract.client.name}</h3>
-                                            <p className="text-sm text-gray-600">{contract.client.bio}</p>
-                                        </div>
-                                    </div>
-
-                                    {/* Talent Section */}
-                                    <div className="w-full bg-gray-100 p-3 rounded-3xl">
-                                        <div className="flex gap-4 justify-between">
-                                            <Image
-                                                src={contract.talent.picture}
-                                                alt={contract.talent.name}
-                                                width={40}
-                                                height={40}
-                                                className="rounded-full w-[47px] h-[47px] object-cover"
-                                            />
-                                            <div>
-                                                <p className="bg-[#CBEC5E] px-4 py-1 rounded-full">Talent</p>
-                                                <p className="flex gap-1"><FaStar className="mt-1 text-amber-300" /> {contract.talent.review}</p>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <h3 className="text-lg font-semibold">{contract.talent.name}</h3>
-                                            <p className="text-sm text-gray-600">{contract.talent.bio}</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                {/* Contract Details */}
-                                <div className="space-y-2">
-                                    <div>
-                                        <h1 className="flex font-bold"><MdOutlineDescription className="mt-1 mr-0.5" />Description</h1>
-                                        <p>{contract.description}</p>
-                                    </div>
-                                    <div>
-                                        <h1 className="flex font-bold"><RiShoppingBag4Fill className="mt-1 mr-0.5" />Job Details</h1>
-                                        <div className="grid grid-cols-2">
-                                            <p className="text-sm">
-                                                <span className="font-semibold">Start Date:</span> {contract.jobDetail.startDate}
-                                            </p>
-                                            <p className="text-sm">
-                                                <span className="font-semibold">Budget:</span> {contract.jobDetail.budget}
-                                            </p>
-                                            <p className="text-sm">
-                                                <span className="font-semibold">End Date:</span> {contract.jobDetail.endDate}
-                                            </p>
-                                            <p className="text-sm">
-                                                <span className="font-semibold">Status:</span>{" "}
-                                                <span
-                                                    className={`${ contract.jobDetail.status === "Completed" ? "text-green-600" : "text-yellow-600" } font-semibold`}
-                                                >
-                                                    {contract.jobDetail.status}
-                                                </span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <h1 className="text-center bg-black rounded-2xl text-white py-1 px-3">
-                                        Fixed-priced contract is under the protection of the payment system.
-                                    </h1>
-                                </div>
-                            </div>
-                        </div>
-                    ))}
-                </div>
-
-                {/* Slider Controls */}
-                <div className="mt-6 flex justify-center space-x-4">
-                    <button className="bg-white rounded-full p-2 md:p-3 shadow-md hover:bg-gray-100">
-                        <FaArrowLeft className="text-black text-lg md:text-xl" />
-                    </button>
-                    <button className="bg-white rounded-full p-2 md:p-3 shadow-md hover:bg-gray-100">
-                        <FaArrowRight className="text-black text-lg md:text-xl" />
-                    </button>
-                </div>
-            </div>
+  return (
+    <div className="pb-12 sm:pt-12 pt-[1rem]">
+      <div className="[@media(min-width:1450px)]:!w-[1440px] [@media(min-width:1210px)]:!w-[1200px] w-full mx-auto">
+        {/* tittle */}
+        <div className="[@media(min-width:1200px)]:!w-[24.5rem] sm:w-[21.1em] w-[16.2rem] relative mx-auto flex justify-center items-center text-center [@media(min-width:1450px)]:!mt-[2rem] [@media(min-width:1200px)]:mt-[1rem] mt-0 [@media(min-width:1450px)]:!mb-[5rem] [@media(min-width:1200px)]:!mb-[4rem] [@media(min-width:450px)]:mb-[3rem] mb-[2rem]">
+          <h1 className="text-[#000000] [@media(min-width:1200px)]:!text-[30px] sm:text-[26px] text-[20px] font-[800] uppercase">
+          SUCCESSFUL CONTRACTS
+          </h1>
+          <div className="absolute [@media(min-width:1200px)]:left-[-25px] left-[-20px] top-0 h-full flex items-center">
+            <div className="[@media(min-width:1200px)]:w-[14px] w-[10px] [@media(min-width:1200px)]:h-[14px] h-[10px] bg-[#C0D724]"></div>
+          </div>
+          <div className="absolute right-0 bottom-0 h-full flex items-end">
+            <div className="[@media(min-width:1200px)]:!w-[164px]  sm:w-[145px] w-[105px] [@media(min-width:1200px)]:h-[4px] h-[2px] rounded-[25px] bg-[#C0D724]"></div>
+          </div>
         </div>
-    );
+
+        {/* Cards */}
+        <div className="[@media(min-width:1210px)]:!w-full [@media(min-width:800px)]:w-[787px] w-[100%] [@media(min-width:1210px)]:mx-0 mx-auto flex [@media(min-width:1210px)]:justify-between justify-center [@media(min-width:1210px)]:!gap-0 [@media(min-width:800px)]:gap-[20px] gap-0 items-center">
+          {contracts.map((contract) => (
+            <div
+              key={contract.id}
+              className={`${contract.uniceClass} relative [@media(min-width:1450px)]:!w-[467px] [@media(min-width:450px)]:w-[387px] w-[335px] [@media(min-width:1450px)]:!h-[486px] [@media(min-width:450px)]:h-[438px] h-[415px]`}
+            >
+              {/* Background Layer with ClipPath */}
+              <div
+                className="absolute inset-0 [@media(min-width:1450px)]:!rounded-4xl rounded-[20px] bg-white SuccessFullContractsCardsClipPath"
+              ></div>
+
+              {/* Content Layer */}
+              <div className="relative z-10 [@media(min-width:1450px)]:!p-6 p-[10px] flex flex-col [@media(min-width:1450px)]:!space-y-4 space-y-0">
+                <div className="flex justify-end gap-5 relative">
+                  <h1 className="font-[900] [@media(min-width:1450px)]:!text-[20px] [@media(min-width:450px)]:text-[18px] text-[15px] pl-[1.5rem] absolute left-0 [@media(min-width:1450px)]:top-[-4px] tracking-[0.3px]">
+                    CONTRACT
+                  </h1>
+                  <div className="text-right">
+                    <h1 className="w-full font-[600] [@media(min-width:1450px)]:!text-[16px] [@media(min-width:450px)]:text-[14px] text-[12px]">
+                      {contract.title}
+                    </h1>
+                    <p className="w-full [@media(min-width:1450px)]:!text-[13px] [@media(min-width:450px)]:text-[12px] text-[11px] font-[400] pt-[5px]">
+                      <span className="font-[500]">Payment Type:</span>{" "}
+                      {contract.paymentType}
+                    </p>
+                  </div>
+                </div>
+                <div className="flex gap-3 justify-between [@media(min-width:1450px)]:!pt-0 [@media(min-width:450px)]:pt-[12px] pt-[9px] [@media(min-width:1450px)]:!pb-0 pb-[10px]">
+                  {/* Client Section */}
+                  <div className="[@media(min-width:1450px)]:!w-[203px] [@media(min-width:450px)]:w-[170px] w-[152px] [@media(min-width:1450px)]:!h-[124px] h-[107px] relative bg-gray-100 [@media(min-width:1450px)]:!p-3 p-[7px] rounded-[18px]">
+                    <div className="flex gap-4 justify-between">
+                      <Image
+                        src={contract.client.picture}
+                        alt={contract.client.name}
+                        width={50}
+                        height={50}
+                        className="rounded-full [@media(min-width:1450px)]:!w-[47px] w-[37px] [@media(min-width:1450px)]:!h-[47px] h-[37px] object-cover"
+                      />
+                      <div className="flex flex-wrap justify-end items-center">
+                        <p className="[@media(min-width:1450px)]:!w-[102px] [@media(min-width:450px)]:w-[85px] w-[75px] [@media(min-width:450px)]:h-[24px] h-[24px] flex justify-center items-center bg-[#DDE3F3] [@media(min-width:450px)]:text-[13px] text-[12px] font-[500] rounded-full">
+                          Client
+                        </p>
+                        <p className="flex items-center gap-1 [@media(min-width:1450px)]:!text-[14px] [@media(min-width:450px)]:text-[13px] text-[12px] font-[600] pt-[3px]">
+                          <FaStar className="[@media(min-width:450px)]:text-[12px] text-[11px] [@media(min-width:450px)]:mt-1 mt-[-1px] text-amber-300" />{" "}
+                          {contract.client.review}
+                        </p>
+                      </div>
+                    </div>
+                    <div className="absolute left-[12px] bottom-[12px]">
+                      <h3 className="[@media(min-width:450px)]:text-[15px] text-[14px] font-[600]">
+                        {contract.client.name}
+                      </h3>
+                      <p className="[@media(min-width:450px)]:text-[13px] text-[11px] text-[#818181] font-[400]">
+                        {contract.client.bio}
+                      </p>
+                    </div>
+                  </div>
+                  {/* Talent Section */}
+                  <div className="[@media(min-width:1450px)]:!w-[203px]  [@media(min-width:450px)]:w-[170px] w-[152px] [@media(min-width:1450px)]:!h-[124px] h-[107px] relative bg-gray-100 [@media(min-width:1450px)]:!p-3 p-[7px] rounded-[18px]">
+                    <div className="flex gap-4 justify-between">
+                      <Image
+                        src={contract.talent.picture}
+                        alt={contract.talent.name}
+                        width={50}
+                        height={50}
+                        className="rounded-full [@media(min-width:1450px)]:!w-[47px] w-[37px] [@media(min-width:1450px)]:!h-[47px] h-[37px] object-cover"
+                      />
+                      <div className="flex flex-wrap justify-end items-center">
+                        <p className="[@media(min-width:1450px)]:!w-[102px] [@media(min-width:450px)]:w-[85px] w-[75px] [@media(min-width:450px)]:h-[24px] h-[24px] flex justify-center items-center bg-[#E1FA77] text-[#18470D] [@media(min-width:450px)]:text-[13px] text-[12px] font-[500] rounded-full ">
+                          Talent
+                        </p>
+                        <p className="flex items-center gap-1 [@media(min-width:1450px)]:!text-[14px] [@media(min-width:450px)]:text-[13px] text-[12px] font-[600] pt-[3px]">
+                          <FaStar className="[@media(min-width:450px)]:text-[12px] text-[11px] [@media(min-width:450px)]:mt-1 mt-[-1px] text-amber-300" />{" "}
+                          {contract.talent.review}
+                        </p>
+                      </div>
+                    </div>
+                    <div className="absolute left-[12px] bottom-[12px]">
+                      <h3 className="[@media(min-width:450px)]:text-[15px] text-[14px] font-[600]">
+                        {contract.talent.name}
+                      </h3>
+                      <p className="[@media(min-width:450px)]:text-[13px] text-[11px] text-[#818181] font-[400]">
+                        {contract.talent.bio}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Contract Details */}
+                <div className="space-y-2">
+                  <div className="w-full flex items-center">
+                    <div className="[@media(min-width:1450px)]:!w-[26px] w-[19px] [@media(min-width:1450px)]:!h-[26px] h-[19px] flex items-center justify-center rounded-[50%] bg-black">
+                      <MdDescription className="text-white [@media(min-width:1450px)]:!text-[14px] text-[12px]" />
+                    </div>
+                    <h1 className="[@media(min-width:450px)]:text-[15px] text-[13px] font-[600] pl-[5px]">
+                      Description
+                    </h1>
+                  </div>
+                  <p className="[@media(min-width:450px)]:text-[13px] text-[12px] text-[#474747] font-[400] [@media(min-width:450px)]:leading-[21px] leading-[20px]">
+                    {contract.description}
+                  </p>
+
+                  <div className="[@media(min-width:1450px)]:!pb-0 pb-[13px]">
+                    <div className="w-full flex items-center pb-[8px]">
+                      <div className="[@media(min-width:1450px)]:!w-[26px] w-[19px] [@media(min-width:1450px)]:!h-[26px] h-[19px] flex items-center justify-center rounded-[50%] bg-black">
+                        <MdEmail className="text-white [@media(min-width:1450px)]:!text-[14px] text-[12px]" />
+                      </div>
+                      <h1 className="[@media(min-width:450px)]:text-[15px] text-[13px] font-[600] pl-[5px]">
+                        Job Details
+                      </h1>
+                    </div>
+                    <div className="flex justify-between items-center">
+                      <div className="[@media(min-width:450px)]:w-[165px] w-[155px] flex flex-wrap gap-[5px]">
+                        <p className="[@media(min-width:450px)]:text-[13px] text-[12px] font-[400] w-[100%] flex justify-between items-center">
+                          <span className="font-semibold">Start Date:</span>{" "}
+                          <span>{contract.jobDetail.startDate}</span>
+                        </p>
+                        <p className="[@media(min-width:450px)]:text-[13px] text-[12px] font-[400] w-[100%] flex justify-between items-center">
+                          <span className="font-semibold">End Date:</span>{" "}
+                          <span>{contract.jobDetail.endDate}</span>
+                        </p>
+                      </div>
+
+                      <div className="[@media(min-width:450px)]:w-[130px] w-[125px] flex flex-wrap gap-[5px]">
+                        <p className="[@media(min-width:450px)]:text-[13px] text-[12px] font-[400] w-[100%] flex items-center justify-between">
+                          <span className="font-semibold">Status:</span>{" "}
+                          <span className={`text-[black] font-[500]`}>
+                            {contract.jobDetail.status}
+                          </span>
+                        </p>
+                        <p className="[@media(min-width:450px)]:text-[13px] text-[12px] font-[400] w-[100%] flex items-center justify-between">
+                          <span className="font-semibold">Budget:</span>{" "}
+                          <span className="">
+                            $ {contract.jobDetail.budget}
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="w-full bg-black [@media(min-width:450px)]:rounded-2xl rounded-[10px]">
+                  <h1 className="[@media(min-width:1450px)]:!text-center text-left [@media(min-width:450px)]:text-[13px] text-[11px] [@media(min-width:1450px)]:!font-[400] font-[300] leading-[19px] text-white py-[6px] [@media(min-width:1450px)]:!pl-0 [@media(min-width:450px)]:pl-[15px] pl-[12px]">
+                    Fixed-priced contract is under the protection of the
+                    <br /> payment system.
+                  </h1>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Slider Controls */}
+        <div className="[@media(min-width:1450px)]:!mt-[3rem] [@media(min-width:1210px)]:mt-[2rem] mt-[1.5rem] flex justify-center space-x-4">
+          <button className="bg-white [@media(min-width:1450px)]:!w-[63px] [@media(min-width:450px)]:w-[47px] w-[41px] [@media(min-width:1450px)]:!h-[63px] [@media(min-width:450px)]:h-[47px] h-[41px] rounded-full flex items-center justify-center shadow-sm">
+            <FaArrowLeft className="text-black [@media(min-width:1450px)]:!text-[19px] [@media(min-width:450px)]:text-[16px] text-[14px]" />
+          </button>
+          <button className="bg-white [@media(min-width:1450px)]:!w-[63px] [@media(min-width:450px)]:w-[47px] w-[41px] [@media(min-width:1450px)]:!h-[63px] [@media(min-width:450px)]:h-[47px] h-[41px] rounded-full flex items-center justify-center shadow-sm">
+            <FaArrowRight className="text-black [@media(min-width:1450px)]:!text-[19px] [@media(min-width:450px)]:text-[16px] text-[14px]" />
+          </button>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default SuccessfulContracts;

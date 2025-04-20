@@ -90,7 +90,7 @@ const SuccessfulContracts = () => {
   ];
 
   return (
-    <div className="pb-12 sm:pt-12 pt-[1rem]">
+    <div className="pb-12 sm:pt-[0.5rem] pt-[1rem]">
       <div className="[@media(min-width:1450px)]:!w-[1440px] [@media(min-width:1210px)]:!w-[1200px] w-full mx-auto">
         {/* tittle */}
         <div className="[@media(min-width:1200px)]:!w-[24.5rem] sm:w-[21.1em] w-[16.2rem] relative mx-auto flex justify-center items-center text-center [@media(min-width:1450px)]:!mt-[2rem] [@media(min-width:1200px)]:mt-[1rem] mt-0 [@media(min-width:1450px)]:!mb-[5rem] [@media(min-width:1200px)]:!mb-[4rem] [@media(min-width:450px)]:mb-[3rem] mb-[2rem]">

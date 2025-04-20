@@ -1,7 +1,6 @@
 import React from "react";
 
-function stepsofsuccess ()
-{
+function stepsofsuccess() {
   const stepsofsuccessData = [
     {
       id: 1,
@@ -42,40 +41,36 @@ function stepsofsuccess ()
             STEPS OF SUCCESS
           </h1>
           <div className="absolute [@media(min-width:1200px)]:left-[-25px] left-[-20px] top-0 h-full flex items-center">
-            <div className="[@media(min-width:1200px)]:w-[14px] w-[10px] [@media(min-width:1200px)]:h-[14px] h-[10px] bg-[#C0D724]"></div>
+            <div className="[@media(min-width:1200px)]:w-[14px] w-[10px] [@media(min-width:1200px)]:h-[14px] h-[10px] bg-[#00f3ff]"></div>
           </div>
           <div className="absolute right-0 bottom-0 h-full flex items-end">
-            <div className="[@media(min-width:1200px)]:w-[124px] w-[92px] [@media(min-width:1200px)]:h-[4px] h-[2px] rounded-[25px] bg-[#C0D724]"></div>
+            <div className="[@media(min-width:1200px)]:w-[124px] w-[92px] [@media(min-width:1200px)]:h-[4px] h-[2px] rounded-[25px] bg-[#00f3ff]"></div>
           </div>
         </div>
         <div className="w-full [@media(min-width:1210px)]:pl-0 sm:pl-[2rem] pl-[1.2rem]">
-
-        
-        <div className="[@media(min-width:1210px)]:w-[297px] w-[224px] [@media(min-width:1210px)]:h-[56px] h-[46px] sm:mt-[3rem] mt-[2rem] mb-[1.5rem] flex items-center bg-white rounded-[30px]">
-          <button className="w-[50%] h-full [@media(min-width:1210px)]:text-[18px] text-[14px] font-[500] text-[#18470D] bg-[#ffffff] rounded-[30px]">
-            Client
-          </button>
-          <button className="w-[50%] h-full [@media(min-width:1210px)]:text-[18px] text-[14px] font-[500] text-[#18470D] bg-[#CBEC5E] border-[3px] border-[#ffffff] rounded-[30px]">
-            Talent
-          </button>
-        </div>
-        <div className="w-full flex items-center justify-between max-h-full overflow-x-auto [@media(min-width:1210px)]:gap-[15px] gap-0 bottomScrollbar">
-          {stepsofsuccessData.map((key) => {
-            return (
-              <div
-                key={key.id}
-                className=" [@media(min-width:1440px)]:w-[275px] w-[230px] [@media(min-width:1440px)]:min-w-[275px] min-w-[230px] [@media(min-width:1440px)]:h-[384px] h-[320px] [@media(min-width:1440px)]:px-[15px] px-[10px] [@media(min-width:1440px)]:pb-[15px] pb-[10px] [@media(min-width:1440px)]:!pt-[75px] [@media(min-width:1210px)]:pt-[50px] pt-[55px] rounded-[30px] flex flex-col justify-start items-end bg-white relative overflow-hidden [@media(min-width:1210px)]:mr-0 mr-[15px]"
-              >
-                <div className="absolute [@media(min-width:1440px)]:left-[1rem] left-[0.7rem] [@media(min-width:1440px)]:top-[1rem] top-[0.7rem] [@media(min-width:1440px)]:w-[70px] w-[60px] [@media(min-width:1440px)]:h-[70px] h-[60px] felx items-center justify-center text-center">
-                  <div
-                    className="relative [@media(min-width:1440px)]:w-[70px] w-[60px] [@media(min-width:1440px)]:h-[70px] h-[60px]"
-                  >
-                    <svg
-                      viewBox="0 0 100 100"
-                      preserveAspectRatio="xMidYMid meet"
-                    >
-                      <path
-                        d="
+          <div className="[@media(min-width:1210px)]:w-[297px] w-[224px] [@media(min-width:1210px)]:h-[56px] h-[46px] sm:mt-[3rem] mt-[2rem] mb-[1.5rem] flex items-center bg-white rounded-[30px]">
+            <button className="w-[50%] h-full [@media(min-width:1210px)]:text-[18px] text-[14px] font-[500] text-[#004b52] bg-[#ffffff] rounded-[30px]">
+              Client
+            </button>
+            <button className="w-[50%] h-full [@media(min-width:1210px)]:text-[18px] text-[14px] font-[500] text-[#004b52] bg-[#7affff] border-[3px] border-[#ffffff] rounded-[30px]">
+              Talent
+            </button>
+          </div>
+          <div className="w-full flex items-center justify-between max-h-full overflow-x-auto [@media(min-width:1210px)]:gap-[15px] gap-0 bottomScrollbar">
+            {stepsofsuccessData.map((key) => {
+              return (
+                <div
+                  key={key.id}
+                  className=" [@media(min-width:1440px)]:w-[275px] w-[230px] [@media(min-width:1440px)]:min-w-[275px] min-w-[230px] [@media(min-width:1440px)]:h-[384px] h-[320px] [@media(min-width:1440px)]:px-[15px] px-[10px] [@media(min-width:1440px)]:pb-[15px] pb-[10px] [@media(min-width:1440px)]:!pt-[75px] [@media(min-width:1210px)]:pt-[50px] pt-[55px] rounded-[30px] flex flex-col justify-start items-end bg-white relative overflow-hidden [@media(min-width:1210px)]:mr-0 mr-[15px]"
+                >
+                  <div className="absolute [@media(min-width:1440px)]:left-[1rem] left-[0.7rem] [@media(min-width:1440px)]:top-[1rem] top-[0.7rem] [@media(min-width:1440px)]:w-[70px] w-[60px] [@media(min-width:1440px)]:h-[70px] h-[60px] felx items-center justify-center text-center">
+                    <div className="relative [@media(min-width:1440px)]:w-[70px] w-[60px] [@media(min-width:1440px)]:h-[70px] h-[60px]">
+                      <svg
+                        viewBox="0 0 100 100"
+                        preserveAspectRatio="xMidYMid meet"
+                      >
+                        <path
+                          d="
             M 50,5
             Q 57,5 63,10
             L 85,25
@@ -92,34 +87,37 @@ function stepsofsuccess ()
             L 37,10
             Q 43,5 50,5
             Z"
-                        fill="#000000"
-                      />
-                    </svg>
-                    <div className="absolute left-0 top-0 w-full h-full flex items-center justify-center">
-                      <h1 className="[@media(min-width:1440px)]:text-[30px] text-[25px] font-[600] text-[white] text-center">
-                        {key.id}
-                      </h1>
+                          fill="#000000"
+                        />
+                      </svg>
+                      <div className="absolute left-0 top-0 w-full h-full flex items-center justify-center">
+                        <h1 className="[@media(min-width:1440px)]:text-[30px] text-[25px] font-[600] text-[white] text-center">
+                          {key.id}
+                        </h1>
+                      </div>
                     </div>
                   </div>
-                </div>
 
-                <img src={key.img} className="[@media(min-width:1440px)]:w-[175px] w-[150px] mx-auto" />
-                <div className="pt-[1rem] w-full">
-                  <h1 className="[@media(min-width:1440px)]:text-[22px]  text-[18px] font-[700]">
-                    {key.tittle}
-                  </h1>
-                  <p className="[@media(min-width:1440px)]:text-[16px] text-[14px] font-[400] pt-[6px] text-[#000000]">
-                    {key.description}
-                  </p>
+                  <img
+                    src={key.img}
+                    className="[@media(min-width:1440px)]:w-[175px] w-[150px] mx-auto"
+                  />
+                  <div className="pt-[1rem] w-full">
+                    <h1 className="[@media(min-width:1440px)]:text-[22px]  text-[18px] font-[700]">
+                      {key.tittle}
+                    </h1>
+                    <p className="[@media(min-width:1440px)]:text-[16px] text-[14px] font-[400] pt-[6px] text-[#000000]">
+                      {key.description}
+                    </p>
+                  </div>
+                  <div className="absolute left-0 [@media(min-width:1440px)]:bottom-[-18px] bottom-[-10px] w-full flex justify-center">
+                    <div className="[@media(min-width:1440px)]:w-[161px] w-[134px] [@media(min-width:1440px)]:h-[25px] h-[16px] bg-[#7affff] rounded-t-[15px]"></div>
+                  </div>
                 </div>
-                <div className="absolute left-0 [@media(min-width:1440px)]:bottom-[-18px] bottom-[-10px] w-full flex justify-center">
-                  <div className="[@media(min-width:1440px)]:w-[161px] w-[134px] [@media(min-width:1440px)]:h-[25px] h-[16px] bg-[#CBEC5E] rounded-t-[15px]"></div>
-                </div>
-              </div>
-            );
-          })}
+              );
+            })}
+          </div>
         </div>
-      </div>
       </div>
     </div>
   );

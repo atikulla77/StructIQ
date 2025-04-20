@@ -13,32 +13,32 @@ function advantagesOfThePlatform() {
               Advantages Of The Platform
             </h1>
             <div className="absolute [@media(min-width:1200px)]:left-[-25px] left-[-20px] sm:top-0 top-[-15px] h-full flex items-center">
-              <div className="[@media(min-width:1200px)]:w-[14px] w-[10px] [@media(min-width:1200px)]:h-[14px] h-[10px] bg-[#C0D724]"></div>
+              <div className="[@media(min-width:1200px)]:w-[14px] w-[10px] [@media(min-width:1200px)]:h-[14px] h-[10px] bg-[#00f3ff]"></div>
             </div>
             <div className="absolute sm:right-0 right-[52px] bottom-0 h-full flex items-end">
-              <div className="[@media(min-width:1200px)]:!w-[165px] sm:w-[140px] w-[110px] [@media(min-width:1200px)]:h-[4px] h-[2px] rounded-[25px] bg-[#C0D724]"></div>
+              <div className="[@media(min-width:1200px)]:!w-[165px] sm:w-[140px] w-[110px] [@media(min-width:1200px)]:h-[4px] h-[2px] rounded-[25px] bg-[#00f3ff]"></div>
             </div>
           </div>
           {/* Main Content */}
           <div className="w-full flex flex-wrap items-end justify-between">
             <div className="[@media(min-width:1215px)]:w-auto w-[100%] sm:px-0 px-[1rem] [@media(min-width:1215px)]:mt-0 mt-[3rem]">
-            <img
-              src="./AdvantagesOfThePlatform.png"
-              className="[@media(min-width:1450px)]:w-[628px] sm:w-[520px] w-[100%] [@media(min-width:1450px)]:h-[412px] sm:h-[341px] h-auto [@media(min-width:1215px)]:mx-0 mx-auto"
-            />
+              <img
+                src="./AdvantagesOfThePlatform.png"
+                className="[@media(min-width:1450px)]:w-[628px] sm:w-[520px] w-[100%] [@media(min-width:1450px)]:h-[412px] sm:h-[341px] h-auto [@media(min-width:1215px)]:mx-0 mx-auto"
+              />
             </div>
             <div className="[@media(min-width:1450px)]:w-[710px] w-[588px]  [@media(min-width:1215px)]:mx-0 mx-auto sm:px-0 px-[1rem]">
               <div className="flex justify-end">
-              <div className="[@media(min-width:1210px)]:w-[297px] w-[224px] [@media(min-width:1210px)]:h-[56px] h-[46px] sm:mt-[3rem] mt-[2rem] mb-[1.5rem] flex items-center bg-white rounded-[30px]">
-                <button className="w-[50%] h-full [@media(min-width:1210px)]:text-[18px] text-[14px] font-[500] text-[#18470D] bg-[#ffffff] rounded-[30px]">
-                  Client
-                </button>
-                <button className="w-[50%] h-full [@media(min-width:1210px)]:text-[18px] text-[14px] font-[500] text-[#18470D] bg-[#CBEC5E] border-[3px] border-[#ffffff] rounded-[30px]">
-                  Talent
-                </button>
+                <div className="[@media(min-width:1210px)]:w-[297px] w-[224px] [@media(min-width:1210px)]:h-[56px] h-[46px] sm:mt-[3rem] mt-[2rem] mb-[1.5rem] flex items-center bg-white rounded-[30px]">
+                  <button className="w-[50%] h-full [@media(min-width:1210px)]:text-[18px] text-[14px] font-[500] text-[#004b52] bg-[#ffffff] rounded-[30px]">
+                    Client
+                  </button>
+                  <button className="w-[50%] h-full [@media(min-width:1210px)]:text-[18px] text-[14px] font-[500] text-[#004b52] bg-[#7affff] border-[3px] border-[#ffffff] rounded-[30px]">
+                    Talent
+                  </button>
+                </div>
               </div>
-              </div>
-              <div className="w-full [@media(min-width:1450px)]:h-[169px] sm:h-[140px] h-[93px] flex justify-between [@media(min-width:1450px)]:px-[35px] sm:px-[30px] px-[25px] [@media(min-width:1450px)]:py-[30px] sm:py-[25px] py-[15px] bg-white sm:rounded-[30px] rounded-[15px] border-[2px] border-[#C1EC05] relative">
+              <div className="w-full [@media(min-width:1450px)]:h-[169px] sm:h-[140px] h-[93px] flex justify-between [@media(min-width:1450px)]:px-[35px] sm:px-[30px] px-[25px] [@media(min-width:1450px)]:py-[30px] sm:py-[25px] py-[15px] bg-white sm:rounded-[30px] rounded-[15px] border-[2px] border-[#96f2ff] relative">
                 <div>
                   <h1 className="[@media(min-width:1450px)]:text-[30px] sm:text-[24px] text-[14px] font-[500]">
                     Top Clients Verified

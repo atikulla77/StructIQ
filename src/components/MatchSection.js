@@ -42,13 +42,13 @@ const MatchSection = () => {
         {/* Tittle */}
         <div className="[@media(min-width:1200px)]:w-[36.3rem] sm:w-[31.3rem] w-[18rem] relative mx-auto flex justify-center items-center text-center">
           <h1 className="text-[#000000] [@media(min-width:1200px)]:!text-[30px] sm:text-[26px] text-[20px] font-[800] uppercase">
-          FIND THE PERFECT MATCH IN SECONDS
+            FIND THE PERFECT MATCH IN SECONDS
           </h1>
           <div className="absolute [@media(min-width:1200px)]:left-[-25px] left-[-20px] sm:top-0 top-[-15px] h-full flex items-center">
-            <div className="[@media(min-width:1200px)]:w-[14px] w-[10px] [@media(min-width:1200px)]:h-[14px] h-[10px] bg-[#C0D724]"></div>
+            <div className="[@media(min-width:1200px)]:w-[14px] w-[10px] [@media(min-width:1200px)]:h-[14px] h-[10px] bg-[#00f3ff]"></div>
           </div>
           <div className="absolute sm:right-0 right-[97px] bottom-0 h-full flex items-end">
-            <div className="[@media(min-width:1200px)]:!w-[165px] sm:w-[140px] w-[95px] [@media(min-width:1200px)]:h-[4px] h-[2px] rounded-[25px] bg-[#C0D724]"></div>
+            <div className="[@media(min-width:1200px)]:!w-[165px] sm:w-[140px] w-[95px] [@media(min-width:1200px)]:h-[4px] h-[2px] rounded-[25px] bg-[#00f3ff]"></div>
           </div>
         </div>
 
@@ -57,7 +57,7 @@ const MatchSection = () => {
           {/* Left Column */}
           <div className="flex flex-col justify-between space-y-6">
             <div>
-              <h2 className="md:text-[50px] sm:text-[28px] text-[20px] md:leading-[68px] text-[#18470D] font-semibold mb-2">
+              <h2 className="md:text-[50px] sm:text-[28px] text-[20px] md:leading-[68px] text-[#004b52] font-semibold mb-2">
                 Whether you’re a talent <br className="hidden md:block" />
                 or a client, start your <br className="hidden md:block" />
                 journey now.
@@ -72,7 +72,7 @@ const MatchSection = () => {
             {/* Search Bar */}
             <div className="relative [@media(min-width:450px)]:flex hidden items-center bg-white rounded-full shadow-lg max-w-lg">
               <div className="flex items-center pl-2">
-                <div className="bg-black border-2 border-[#CBEC5E] p-2 rounded-full">
+                <div className="bg-black border-2 border-[#7affff] p-2 rounded-full">
                   <IoIosSearch className="w-5 h-5 text-white" />
                 </div>
               </div>
@@ -117,18 +117,18 @@ const MatchSection = () => {
                 )}
               </div>
             </div>
-            <div className="w-[100%] h-[50px] relative [@media(min-width:450px)]:hidden flex items-center bg-white rounded-full shadow-lg">
-              <div className="w-[42px] h-[42px] bg-black border-2 border-[#CBEC5E] flex justify-center items-center rounded-[50%] ml-[5px]">
-                <IoIosSearch className="text-[25px] text-white" />
+            <div className="w-[100%] [@media(min-width:370px)]:h-[50px] h-[43px] relative [@media(min-width:450px)]:hidden flex items-center bg-white rounded-full shadow-lg">
+              <div className="[@media(min-width:370px)]:w-[42px] w-[35px] [@media(min-width:370px)]:h-[42px] h-[35px] bg-black border-2 border-[#7affff] flex justify-center items-center rounded-[50%] ml-[5px]">
+                <IoIosSearch className="[@media(min-width:370px)]:text-[25px] text-[20px] text-white" />
               </div>
 
               <input
                 type="text"
                 placeholder="Find a job, talent or service"
-                className="flex-1 z-0 h-[50px] py-4 px-[10px] [@media(min-width:450px)]:text-[14px] text-[13px] font-[500] text-[#737373] placeholder:text-[#737373] outline-none"
+                className="flex-1 z-0 [@media(min-width:370px)]:h-[50px] h-[43px] py-4 [@media(min-width:370px)]:px-[10px] px-[5px] [@media(min-width:450px)]:!text-[14px] [@media(min-width:370px)]:text-[13px] text-[12px] font-[500] text-[#737373] placeholder:text-[#737373] outline-none"
               />
 
-              <div className="relative mr-[5px]">
+              <div className="relative [@media(min-width:370px)]:mr-[5px] mr-0">
                 <div className="absolute left-0 top-0 h-full py-[13px]">
                   <div className="w-[1px] h-full bg-[#737373]"></div>
                 </div>
@@ -136,9 +136,9 @@ const MatchSection = () => {
                   onClick={() => {
                     setIsTalentOpen(!isTalentOpen);
                   }}
-                  className="bg-transparent [@media(min-width:450px)]:w-[100px] w-[80px] h-[52px] rounded-full flex justify-center items-center [@media(min-width:450px)]:gap-[10px] gap-[7px] text-black cursor-pointer"
+                  className="bg-transparent [@media(min-width:450px)]:!w-[100px] [@media(min-width:370px)]:w-[80px] w-[70px] h-[52px] rounded-full flex justify-center items-center [@media(min-width:450px)]:!gap-[10px] [@media(min-width:370px)]:gap-[7px] gap-[5px] text-black cursor-pointer"
                 >
-                  <span className="[@media(min-width:450px)]:text-[14px] text-[13px] font-[500] text-[#474747]">
+                  <span className="[@media(min-width:450px)]:!text-[14px] [@media(min-width:370px)]:text-[13px] text-[12px] font-[500] text-[#474747]">
                     {
                       talents.find((talent) => talent.code === selectedTalent)
                         ?.name
@@ -178,7 +178,7 @@ const MatchSection = () => {
             {/* Buttons and List */}
             <div className="space-y-4 pb-4">
               <div className="flex items-center">
-                <button className="sm:w-[122px] w-[96px] sm:h-[48px] h-[40px] sm:text-[14px] text-[12px] sm:mr-[18px] mr-[12px] font-[500] text-[#18470D] bg-[#CBEC5E] rounded-[30px]">
+                <button className="sm:w-[122px] w-[96px] sm:h-[48px] h-[40px] sm:text-[14px] text-[12px] sm:mr-[18px] mr-[12px] font-[500] text-[#004b52] bg-[#7affff] rounded-[30px]">
                   Sign Up
                 </button>
                 <button className="sm:w-[122px] w-[96px] sm:h-[48px] h-[40px] sm:text-[14px] text-[11px] font-[500] text-[#ffffff] bg-[#000000] rounded-[30px]">
@@ -229,9 +229,11 @@ const MatchSection = () => {
             {/* Talent Overlay */}
             <div className="absolute top-[55%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 flex items-center justify-center">
               <div className="bg-[#f0f1f4]  p-3 rounded-full bg-opacity-70 ">
-                <div className="flex bg-white border-2  p-3 border-[#CBEC5E] rounded-full items-center space-x-2">
-                  <div className="w-8 h-8 rounded-full bg-[#CBEC5E]"></div>
-                  <h3 className="sm:text-lg text-[14px] pr-3 text-black">Talent</h3>
+                <div className="flex bg-white border-2  p-3 border-[#7affff] rounded-full items-center space-x-2">
+                  <div className="w-8 h-8 rounded-full bg-[#7affff]"></div>
+                  <h3 className="sm:text-lg text-[14px] pr-3 text-black">
+                    Talent
+                  </h3>
                 </div>
               </div>
             </div>

@@ -13,7 +13,8 @@ const Discover = () => {
       id: 6,
       img: "/images/d-6.png",
       title: "Marine Services",
-      uniceClass: "[@media(min-width:1440px)]:!block [@media(min-width:1210px)]:hidden block",
+      uniceClass:
+        "[@media(min-width:1440px)]:!block [@media(min-width:1210px)]:hidden block",
     },
   ];
 
@@ -26,10 +27,10 @@ const Discover = () => {
             Discover
           </h1>
           <div className="absolute [@media(min-width:1200px)]:left-[-25px] left-[-20px] top-0 h-full flex items-center">
-            <div className="[@media(min-width:1200px)]:w-[14px] w-[10px] [@media(min-width:1200px)]:h-[14px] h-[10px] bg-[#C0D724]"></div>
+            <div className="[@media(min-width:1200px)]:w-[14px] w-[10px] [@media(min-width:1200px)]:h-[14px] h-[10px] bg-[#00f3ff]"></div>
           </div>
           <div className="absolute right-0 bottom-0 h-full flex items-end">
-            <div className="[@media(min-width:1200px)]:!w-[79px]  sm:w-[70px] w-[50px] [@media(min-width:1200px)]:h-[4px] h-[2px] rounded-[25px] bg-[#C0D724]"></div>
+            <div className="[@media(min-width:1200px)]:!w-[79px]  sm:w-[70px] w-[50px] [@media(min-width:1200px)]:h-[4px] h-[2px] rounded-[25px] bg-[#00f3ff]"></div>
           </div>
         </div>
 
@@ -52,8 +53,8 @@ const Discover = () => {
                   {dis.title}
                 </h3>
                 <div className="absolute right-[4px] top-0 h-full flex items-center">
-                  <p className=" w-[48px] h-[48px] flex items-center justify-center bg-[#CBEC5E] rounded-full">
-                    <CgArrowTopRight className="text-[20px] text-[#18470D]" />
+                  <p className=" w-[48px] h-[48px] flex items-center justify-center bg-[#7af1ff] rounded-full">
+                    <CgArrowTopRight className="text-[20px] text-[#004b52]" />
                   </p>
                 </div>
               </div>
@@ -61,8 +62,8 @@ const Discover = () => {
           ))}
         </div>
 
-       {/* Slider Controls */}
-       <div className="[@media(min-width:1450px)]:!mt-[3rem] [@media(min-width:1210px)]:mt-[2rem] mt-[1.5rem] [@media(min-width:1210px)]:flex hidden justify-center space-x-4">
+        {/* Slider Controls */}
+        <div className="[@media(min-width:1450px)]:!mt-[3rem] [@media(min-width:1210px)]:mt-[2rem] mt-[1.5rem] [@media(min-width:1210px)]:flex hidden justify-center space-x-4">
           <button className="bg-white [@media(min-width:1450px)]:!w-[63px] [@media(min-width:450px)]:w-[47px] w-[41px] [@media(min-width:1450px)]:!h-[63px] [@media(min-width:450px)]:h-[47px] h-[41px] rounded-full flex items-center justify-center shadow-sm">
             <FaArrowLeft className="text-black [@media(min-width:1450px)]:!text-[19px] [@media(min-width:450px)]:text-[16px] text-[14px]" />
           </button>

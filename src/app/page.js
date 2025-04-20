@@ -7,7 +7,7 @@ import StepsOfSuccess from "../components/stepsofsuccess";
 import TopTalentsReadyToHelp from "../components/topTalentsReadyToHelp";
 import GetAnswers from "../components/getAnswers";
 import Footer from "../components/footer";
-import Jobwheeinaction from "../components/jobwheeinaction";
+import Structiqinaction from "../components/structiqinaction";
 import SuccessfulContracts from "@/components/SuccessfulContracts";
 import MatchSection from "@/components/MatchSection";
 
@@ -23,7 +23,7 @@ export default function Home() {
       </div>
       <StepsOfSuccess />
       <AdvantagesOfThePlatform />
-      <Jobwheeinaction />
+      <Structiqinaction />
       <TopTalentsReadyToHelp />
       <GetAnswers />
       <Footer />

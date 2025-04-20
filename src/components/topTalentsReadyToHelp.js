@@ -67,10 +67,10 @@ function topTalentsReadyToHelp() {
             TOP TALENTS READY TO HELP
           </h1>
           <div className="absolute [@media(min-width:1200px)]:left-[-25px] left-[-20px] top-0 h-full flex items-center">
-            <div className="[@media(min-width:1200px)]:w-[14px] w-[10px] [@media(min-width:1200px)]:h-[14px] h-[10px] bg-[#C0D724]"></div>
+            <div className="[@media(min-width:1200px)]:w-[14px] w-[10px] [@media(min-width:1200px)]:h-[14px] h-[10px] bg-[#00f3ff]"></div>
           </div>
           <div className="absolute right-0 bottom-0 h-full flex items-end">
-            <div className="[@media(min-width:1200px)]:!w-[225px] sm:w-[198px] w-[151px] [@media(min-width:1200px)]:h-[4px] h-[2px] rounded-[25px] bg-[#C0D724]"></div>
+            <div className="[@media(min-width:1200px)]:!w-[225px] sm:w-[198px] w-[151px] [@media(min-width:1200px)]:h-[4px] h-[2px] rounded-[25px] bg-[#00f3ff]"></div>
           </div>
         </div>
         {/* Content */}
@@ -116,7 +116,7 @@ function topTalentsReadyToHelp() {
             })}
           </div>
           <div className="[@media(min-width:1450px)]:!w-[565px] [@media(min-width:1210px)]:w-[470px] w-[553px] [@media(min-width:1210px)]:!mx-0 [@media(min-width:565px)]:mx-[2rem] mx-[1rem] [@media(min-width:1210px)]:mt-0 mt-[4rem]">
-            <h1 className="[@media(min-width:1450px)]:!text-[50px] [@media(min-width:1210px)]:!text-[42px] sm:text-[28px] text-[20px] text-[#18470D] font-[500] [@media(min-width:1450px)]:leading-[68px] [@media(min-width:1210px)]:leading-[56.75px] leading-[36px] [@media(min-width:1450px)]:!pb-[3rem] [@media(min-width:1210px)]:pb-[2rem] pb-[1rem]">
+            <h1 className="[@media(min-width:1450px)]:!text-[50px] [@media(min-width:1210px)]:!text-[42px] sm:text-[28px] text-[20px] text-[#004b52] font-[500] [@media(min-width:1450px)]:leading-[68px] [@media(min-width:1210px)]:leading-[56.75px] leading-[36px] [@media(min-width:1450px)]:!pb-[3rem] [@media(min-width:1210px)]:pb-[2rem] pb-[1rem]">
               Work with top talents
               <br className="[@media(min-width:1210px)]:flex hidden" />
               across industries{" "}
@@ -133,7 +133,7 @@ function topTalentsReadyToHelp() {
               business.
             </p>
             <div className="flex items-center [@media(min-width:1450px)]:!pb-[3rem] [@media(min-width:1210px)]:pb-[2.5rem] pb-[2rem] [@media(min-width:1210px)]:pt-0 pt-[1rem]">
-              <button className="sm:w-[122px] w-[96px] sm:h-[48px] h-[40px] sm:text-[14px] text-[12px] sm:mr-[18px] mr-[12px] font-[500] text-[#18470D] bg-[#CBEC5E] rounded-[30px]">
+              <button className="sm:w-[122px] w-[96px] sm:h-[48px] h-[40px] sm:text-[14px] text-[12px] sm:mr-[18px] mr-[12px] font-[500] text-[#004b52] bg-[#7affff] rounded-[30px]">
                 Sign Up
               </button>
               <button className="sm:w-[122px] w-[96px] sm:h-[48px] h-[40px] sm:text-[14px] text-[11px] font-[500] text-[#ffffff] bg-[#000000] rounded-[30px]">

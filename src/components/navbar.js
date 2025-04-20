@@ -33,34 +33,7 @@ export default function Navbar() {
       <div className="[@media(min-width:1450px)]:!w-[1440px] [@media(min-width:1210px)]:!w-[1200px] [@media(min-width:850px)]:w-[780px] [@media(min-width:540px)]:w-[95%] w-[100%] [@media(min-width:1450px)]:!h-[74px] [@media(min-width:1210px)]:!h-[62px] [@media(min-width:500px)]:h-[54px]  h-[49px] mx-auto rounded-full flex justify-between bg-black items-center relative [@media(min-width:1210px)]:!px-[15px] [@media(min-width:850px)]:px-[8px] px-[5px]">
         <div className="flex items-center [@media(min-width:1450px)]:!ml-[1rem]  [@media(min-width:850px)]:!ml-[0.8rem] [@media(min-width:450px)]:ml-[0.5rem] ml-[1rem]">
           <Link href="/">
-            <Image
-              src="/logo.png"
-              alt="Logo"
-              width={171}
-              height={27}
-              className="[@media(min-width:1450px)]:flex hidden cursor-pointer"
-            />
-            <Image
-              src="/logo.png"
-              alt="Logo"
-              width={142}
-              height={22}
-              className="[@media(min-width:1450px)]:!hidden [@media(min-width:1210px)]:flex hidden cursor-pointer"
-            />
-            <Image
-              src="/logo.png"
-              alt="Logo"
-              width={108}
-              height={17}
-              className="[@media(min-width:1210px)]:!hidden [@media(min-width:550px)]:flex hidden cursor-pointer"
-            />
-            <Image
-              src="/logo.png"
-              alt="Logo"
-              width={95}
-              height={15}
-              className="[@media(min-width:550px)]:hidden flex cursor-pointer"
-            />
+            <img src="/StructIQ_Logo-1.png" className="[@media(min-width:1210px)]:w-[120px] w-[90px]" />
           </Link>
         </div>
 

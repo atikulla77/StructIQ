@@ -98,10 +98,10 @@ const SuccessfulContracts = () => {
             SUCCESSFUL CONTRACTS
           </h1>
           <div className="absolute [@media(min-width:1200px)]:left-[-25px] left-[-20px] top-0 h-full flex items-center">
-            <div className="[@media(min-width:1200px)]:w-[14px] w-[10px] [@media(min-width:1200px)]:h-[14px] h-[10px] bg-[#C0D724]"></div>
+            <div className="[@media(min-width:1200px)]:w-[14px] w-[10px] [@media(min-width:1200px)]:h-[14px] h-[10px] bg-[#00f3ff]"></div>
           </div>
           <div className="absolute right-0 bottom-0 h-full flex items-end">
-            <div className="[@media(min-width:1200px)]:!w-[164px]  sm:w-[145px] w-[105px] [@media(min-width:1200px)]:h-[4px] h-[2px] rounded-[25px] bg-[#C0D724]"></div>
+            <div className="[@media(min-width:1200px)]:!w-[164px]  sm:w-[145px] w-[105px] [@media(min-width:1200px)]:h-[4px] h-[2px] rounded-[25px] bg-[#00f3ff]"></div>
           </div>
         </div>
 
@@ -196,7 +196,7 @@ l-893 6 1 -2299z"
                         className="rounded-full [@media(min-width:1450px)]:!w-[47px] w-[37px] [@media(min-width:1450px)]:!h-[47px] h-[37px] object-cover"
                       />
                       <div className="flex flex-wrap justify-end items-center">
-                        <p className="[@media(min-width:1450px)]:!w-[102px] [@media(min-width:450px)]:w-[85px] w-[75px] [@media(min-width:450px)]:h-[24px] h-[24px] flex justify-center items-center bg-[#E1FA77] text-[#18470D] [@media(min-width:450px)]:text-[13px] text-[12px] font-[500] rounded-full ">
+                        <p className="[@media(min-width:1450px)]:!w-[102px] [@media(min-width:450px)]:w-[85px] w-[75px] [@media(min-width:450px)]:h-[24px] h-[24px] flex justify-center items-center bg-[#7af1ffcf] text-[#004b52] [@media(min-width:450px)]:text-[13px] text-[12px] font-[500] rounded-full ">
                           Talent
                         </p>
                         <p className="flex items-center gap-1 [@media(min-width:1450px)]:!text-[14px] [@media(min-width:450px)]:text-[13px] text-[12px] font-[600] pt-[3px]">
